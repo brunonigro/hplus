@@ -15,9 +15,50 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
+$positive:                        #09213b !default;
+
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+
+// Import Roboto Google Font
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+
+
+// Ionic
+.wrapper {
+	display: flex;
+	height: 100%; 
+	min-height: 100vh;
+	flex-direction: column;
+	font-family: 'Roboto', sans-serif;	
+}
+.wrapper-bg {
+	background: $light url(../img/background.jpg) center center no-repeat;
+	justify-content: center;
+	background-size: cover;
+}
+
+
+// Login
+.logo {
+	display: flex;
+	justify-content: center;
+	padding: 30% 0;
+}
+.logo img {
+	width: 50%;
+	height: 100%;
+}
+.form-box {
+	color: #fff;
+	flex: 1 auto;
+	
+}
+
+
+
 
