@@ -5,8 +5,7 @@
       </ion-nav-back-button>
 
       <ion-nav-buttons side="left">
-        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
-        </button>
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
       </ion-nav-buttons>
     </ion-nav-bar>
     <ion-nav-view name="menuContent"></ion-nav-view>
@@ -14,31 +13,39 @@
 
   <ion-side-menu side="left">
     <ion-content>
-      <section class="user-info">
-        <h1>Emily Ratajkowsi</h1>
-        <a href="#">emily@entersistemas.com.br</a>
+      
+      <section class="wrapper">
+        <div class="user-info">
+          <h1 class="title">
+            Emily Ratajkowsi
+            <span>emilyrataj@email.com.br</span>
+          </h1>
+        </div>
+        
+        <div class="menu-principal">
+          <ul class="list menu-list">
+            <li class="item"><a href="#" menu-close>Perfil</a></li>
+            <li class="item"><a href="#" menu-close>Calendário</a></li>
+            <li class="item"><a href="#" menu-close>Overview</a></li>
+            <li class="item"><a href="#" menu-close>Groups</a></li>
+            <li class="item"><a href="#" menu-close>Lists</a></li>
+          </ul>
+        </div>
+        
+        <div class="menu-secundario">
+          <ul class="list">
+            <li class="item"><a href="#/app/login" menu-close>Sair</a></li>
+          </ul>
+        </div>
       </section>
 
-      <ul class="menu-list">
-        <li><a href="#" menu-close>Perfil</a></li>
-        <li><a href="#" menu-close>Calendário</a></li>
-        <li><a href="#" menu-close>Overview</a></li>
-        <li><a href="#" menu-close>Groups</a></li>
-        <li><a href="#" menu-close>Lists</a></li>
-      </ul>
-
-      <ul class="sub-menu">
-        <li><a href="#" menu-close>Settings</a></li>
-        <li><a href="#" menu-close>Sair</a></li>
-      </ul>
-      
       <!--
       <ion-list>
-        <ion-item menu-close ng-click="login()">Login (modal)</ion-item>
-        <ion-item menu-close href="#/app/search">Search</ion-item>
-        <ion-item menu-close href="#/app/browse">Browse</ion-item>
-        <ion-item menu-close href="#/app/playlists">Playlists</ion-item>
-        <ion-item menu-close href="#app/browse">Browse</ion-item>
+      <ion-item menu-close ng-click="login()">Login (modal)</ion-item>
+      <ion-item menu-close href="#/app/search">Search</ion-item>
+      <ion-item menu-close href="#/app/browse">Browse</ion-item>
+      <ion-item menu-close href="#/app/playlists">Playlists</ion-item>
+      <ion-item menu-close href="#app/browse">Browse</ion-item>
       </ion-list>
       -->
     </ion-content>

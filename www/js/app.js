@@ -32,11 +32,38 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
+  .state('app.login', {
+    url: '/login',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/login.html'
+      }
+    }
+  })
+
+  .state('app.cadastro', {
+    url: '/cadastro',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/cadastro.html'
+      }
+    }
+  })
+
   .state('app.inicio', {
     url: '/inicio',
     views: {
       'menuContent': {
         templateUrl: 'templates/inicio.html'
+      }
+    }
+  })
+
+  .state('app.welcome', {
+    url: '/welcome',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/welcome.html'
       }
     }
   })
@@ -83,5 +110,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   */
   
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/inicio');
+  $urlRouterProvider.otherwise('/app/login');
 });

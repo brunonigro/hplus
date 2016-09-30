@@ -16,6 +16,8 @@ $dark:                            #444 !default;
 */
 
 $positive:                        #09213b !default;
+$balanced:                        #a6c514 !default;
+
 
 
 // The path for our ionicons font files, relative to the built CSS in www/css
@@ -43,11 +45,47 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 }
 
 
+// Menu
+.user-info,
+.menu-principal,
+.menu-secundario {
+	padding: 3em 2em;
+}
+.user-info > .title {
+	margin: 0;
+	padding: 0;
+	font-size: 1.75rem;
+	font-weight: 400;
+}
+.user-info > .title span {
+	color: #555;
+	display: block;
+	font-size: 1rem;
+	margin-top: .5rem;
+}
+.menu-principal {
+	flex: 1 auto;
+}
+.menu-secundario {
+	align-items: flex-end;
+}
+.menu-principal .item,
+.menu-secundario .item {
+	padding: 1em 0;
+	border: 1px solid transparent;
+}
+.menu-principal .item a,
+.menu-secundario .item a  {
+	text-decoration: none;
+}
+
+
 // Login
-.logo {
+.logo,
+.welcome {
 	display: flex;
 	justify-content: center;
-	padding: 30% 0;
+	padding: 25% 0;
 }
 .logo img {
 	width: 50%;
@@ -56,8 +94,77 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .form-box {
 	color: #fff;
 	flex: 1 auto;
-	
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Roboto', sans-serif;
 }
+.login-box {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.button-max {
+	margin: 0;
+	font-weight: 900;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	border-radius: 0;
+}
+.item-custom {
+	border: 0;
+	padding: 1.25em;
+	border-bottom: 1px solid transparent;
+	background: rgba(255,255,255,1);
+}
+.item-custom .input-label {
+	color: #999;
+	font-size: .85em;
+	font-weight: 400;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+.item-custom .box-password {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.item-custom .input-custom {
+	color: #000;
+	font-size: 1.15em;
+	background: transparent;
+}
+.item-custom .input-custom::-webkit-input-placeholder { font-size: .75em; color: #ccc; }
+.item-custom .input-custom::-moz-placeholder          { font-size: .75em; color: #ccc; }
+.item-custom .input-custom:-ms-input-placeholder      { font-size: .75em; color: #ccc; }
+.item-custom .input-custom:-moz-placeholder           { font-size: .75em; color: #ccc; }
+
+
+// Welcome
+.welcome {
+	color: #fff;
+	flex: 1 auto;
+	padding: 20% 0;
+	align-items: center;
+	flex-direction: column;
+}
+.welcome img {
+	width: 30%;
+	height: 100%;
+	margin: 25% auto;	
+}
+.welcome h1 {
+	color: #fff;
+	font-weight: 300;
+}
+.welcome p {
+	text-align: center;
+	font-size: .9rem;
+	line-height: 1.5;
+	padding: 0 15%;
+}
+
+
 
 
 
