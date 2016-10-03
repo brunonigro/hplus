@@ -9846,7 +9846,7 @@ a.button {
   margin-top: .5rem; }
 
 .menu-principal {
-  flex: 1 auto; }
+  flex: 1 1 auto; }
 
 .menu-secundario {
   align-items: flex-end; }
@@ -9877,6 +9877,16 @@ a.button {
 
 .btn-add-image a img {
   width: 35%; }
+
+.btn-add-image a .avatar {
+  width: 50%; }
+
+.btn-add-image .icon-edit {
+  position: absolute;
+  height: auto;
+  width: 40px;
+  left: 61.5%;
+  top: 30px; }
 
 .form-box {
   color: #fff;
