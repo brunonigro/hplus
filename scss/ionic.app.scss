@@ -17,6 +17,8 @@ $dark:                            #444 !default;
 
 $positive:                        #09213b !default;
 $balanced:                        #a6c514 !default;
+$calm:                            #3d72ab !default;
+
 
 
 
@@ -165,7 +167,37 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 }
 
 
-
+// Lista de Ramais
+.box-busca {
+	background-color: $calm;
+}
+.box-lista {
+	// margin: 1em 0;
+}
+.box-lista > .item {
+	margin-bottom: .5em;
+	padding: 1.5em 1em .75em;
+	border: 1px solid transparent;
+	border-bottom-color: $stable;
+}
+.box-lista .item .ramal-num {
+	display: flex;
+	font-size: 1.25em;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.item-outline {
+	border: 1px solid white;
+	background: transparent;
+}
+.input-outline {
+	font-weight: 600;
+	color: $light !important;
+}
+.input-outline::-webkit-input-placeholder { color: $light; font-weight: 300; text-transform: lowercase; }
+.input-outline::-moz-placeholder          { color: $light; font-weight: 300; text-transform: lowercase; }
+.input-outline:-ms-input-placeholder      { color: $light; font-weight: 300; text-transform: lowercase; }
+.input-outline:-moz-placeholder           { color: $light; font-weight: 300; text-transform: lowercase; }
 
 
 
