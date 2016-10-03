@@ -9866,13 +9866,21 @@ a.button {
   justify-content: center;
   padding: 25% 0; }
 
-.logo img {
+.logo img,
+.btn-add-image a img {
   width: 50%;
   height: 100%; }
 
+.btn-add-image {
+  padding: 5% 2.5% 2.5%;
+  text-align: center; }
+
+.btn-add-image a img {
+  width: 35%; }
+
 .form-box {
   color: #fff;
-  flex: 1 auto;
+  flex: 1 1 auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -9886,9 +9894,10 @@ a.button {
 .button-max {
   margin: 0;
   font-weight: 900;
-  font-family: 'Roboto', sans-serif;
+  border-radius: 0;
+  line-height: 2.75em;
   text-transform: uppercase;
-  border-radius: 0; }
+  font-family: 'Roboto', sans-serif; }
 
 .item-custom {
   border: 0;
@@ -9899,8 +9908,8 @@ a.button {
 .item-custom .input-label {
   color: #999;
   font-size: .85em;
-  font-weight: 400;
-  letter-spacing: .1em;
+  font-weight: 600;
+  letter-spacing: -.01rem;
   text-transform: uppercase; }
 
 .item-custom .box-password {
@@ -9910,8 +9919,13 @@ a.button {
 
 .item-custom .input-custom {
   color: #000;
-  font-size: 1.15em;
+  font-size: 1em;
   background: transparent; }
+
+.item-outline {
+  margin: .5em 0;
+  padding: .35em 0;
+  border-bottom: 1px solid #f8f8f8 !important; }
 
 .item-custom .input-custom::-webkit-input-placeholder {
   font-size: .75em;
