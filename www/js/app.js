@@ -68,6 +68,69 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+  .state('app.room-service', {
+    url: '/room-service',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/room-service.html'
+      }
+    }
+  })
+
+  .state('app.atracoes-eventos', {
+    url: '/atracoes-eventos',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/atracoes-eventos.html'
+      }
+    }
+  })
+
+  .state('app.extrato-conta', {
+    url: '/extrato-conta',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/extrato-conta.html'
+      }
+    }
+  })
+
+  .state('app.lista-ramais', {
+    url: '/lista-ramais',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/lista-ramais.html'
+      }
+    }
+  })
+
+  .state('app.guestone', {
+    url: '/guestone',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/guestone.html'
+      }
+    }
+  })
+
+  .state('app.guest-service', {
+    url: '/guest-service',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/guest-service.html'
+      }
+    }
+  })
+
+  .state('app.editar-perfil', {
+    url: '/editar-perfil',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/editar-perfil.html'
+      }
+    }
+  })
+
 
   /*
   .state('app.search', {

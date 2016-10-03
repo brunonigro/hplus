@@ -9853,7 +9853,7 @@ a.button {
 
 .menu-principal .item,
 .menu-secundario .item {
-  padding: 1em 0;
+  padding: .75em 0;
   border: 1px solid transparent; }
 
 .menu-principal .item a,
