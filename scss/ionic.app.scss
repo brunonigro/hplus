@@ -112,7 +112,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	left: 61.5%;
 	top: 30px;
 }
-
 .form-box {
 	color: #fff;
 	flex: 1 1 auto;
@@ -195,49 +194,77 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 
 // Início
-.inicio-container {
+.menu-container,
+.guestone-container {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	background-color: $stable;
 }
-.inicio-container > .row {
+.guestone-container {
+	background-color: $light;
+}
+.menu-container > .row,
+.guestone-container > .row {
 	flex: 1;
 }
-.header-inicio {
+.header-inicio,
+.header-guestone {
 	color: $light;
 	margin-bottom: .75em;
-	flex: .7 1 !important;
+	flex: .6 1 !important;
 	align-items: center;
 	background: $calm url(../img/background-header.jpg) center center no-repeat;
+	background-size: cover;
 }
-.header-inicio .titulo {
+.header-guestone {
+	color: $positive;
+	flex: .5 1 !important;
+	background: $light none;
+}
+.header-inicio .titulo,
+.header-guestone .titulo {
 	color: $light;
+	font-size: 2.5em;
 	font-weight: 300;
 	margin-bottom: 0;
-	font-size: 2.75em;
+}
+.header-guestone .titulo {
+	margin: .75em auto 0;
+	color: $positive;
+	font-size: 2em;
 }
 .header-inicio .titulo span {
 	font-size: inherit;
 	color: rgba(255,255,255,.5);
 }
-.icon-row {
+.icon-row,
+.icon-guestone-row {
 	margin: auto;
 	padding: .25em;
 	display: flex;
-	
 	overflow: hidden;
 	align-items: center;
 }
-.icon-row > .col {
+.icon-guestone-row {
+	align-items: flex-start;
+}
+.icon-row > .col,
+.icon-guestone-row > .col {
 	padding: .5em;
 	cursor: pointer;
 }
-.item-menu-card {
+
+.item-menu-card,
+.item-guestone-card {
 	padding: .75em;
 	border-radius: .2em;
 	background-color: #fff;
-	box-shadow: 0 .1em .2rem rgba(0,0,0,.1);
+	box-shadow: 0 .2em .5rem rgba(0,0,0,.1);
+}
+.item-guestone-card {
+	padding: 0;
+	overflow: hidden;
 }
 .item-menu-card .thumbnail {
 	overflow: hidden;
@@ -246,12 +273,31 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .item-menu-card .thumbnail img {
 	max-width: 70%;
 }
-.item-menu-card a {
+.item-menu-card a,
+.item-guestone-card a {
 	font-size: 1em;
 	font-weight: 300;
 	margin-top: .5em;
 	text-decoration: none;
 }
+.item-guestone-card .thumbnail img {
+	width: 100%;
+}
+.item-guestone-card span {
+	margin: .5em auto 1em;
+	font-weight: 400;
+	display: block;
+}
+.ico-check {
+	width: 38px;
+	height: 32px;
+	position: fixed;
+	background: url(../img/ico-check.png) 5px center no-repeat;
+}
+.ico-none {
+	background-image: none;
+}
+
 
 
 // Room Service
@@ -291,6 +337,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .input-outline::-moz-placeholder          { color: $light; font-weight: 300; text-transform: lowercase; }
 .input-outline:-ms-input-placeholder      { color: $light; font-weight: 300; text-transform: lowercase; }
 .input-outline:-moz-placeholder           { color: $light; font-weight: 300; text-transform: lowercase; }
+
 
 
 

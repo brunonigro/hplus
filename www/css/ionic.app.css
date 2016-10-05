@@ -9975,48 +9975,76 @@ a.button {
   line-height: 1.5;
   padding: 0 15%; }
 
-.inicio-container {
+.menu-container,
+.guestone-container {
   height: 100%;
   display: flex;
   flex-direction: column;
   background-color: #f8f8f8; }
 
-.inicio-container > .row {
+.guestone-container {
+  background-color: #fff; }
+
+.menu-container > .row,
+.guestone-container > .row {
   flex: 1; }
 
-.header-inicio {
+.header-inicio,
+.header-guestone {
   color: #fff;
   margin-bottom: .75em;
-  flex: .7 1 !important;
+  flex: .6 1 !important;
   align-items: center;
-  background: #3d72ab url(../img/background-header.jpg) center center no-repeat; }
+  background: #3d72ab url(../img/background-header.jpg) center center no-repeat;
+  background-size: cover; }
 
-.header-inicio .titulo {
+.header-guestone {
+  color: #09213b;
+  flex: .5 1 !important;
+  background: #fff none; }
+
+.header-inicio .titulo,
+.header-guestone .titulo {
   color: #fff;
+  font-size: 2.5em;
   font-weight: 300;
-  margin-bottom: 0;
-  font-size: 2.75em; }
+  margin-bottom: 0; }
+
+.header-guestone .titulo {
+  margin: .75em auto 0;
+  color: #09213b;
+  font-size: 2em; }
 
 .header-inicio .titulo span {
   font-size: inherit;
   color: rgba(255, 255, 255, 0.5); }
 
-.icon-row {
+.icon-row,
+.icon-guestone-row {
   margin: auto;
   padding: .25em;
   display: flex;
   overflow: hidden;
   align-items: center; }
 
-.icon-row > .col {
+.icon-guestone-row {
+  align-items: flex-start; }
+
+.icon-row > .col,
+.icon-guestone-row > .col {
   padding: .5em;
   cursor: pointer; }
 
-.item-menu-card {
+.item-menu-card,
+.item-guestone-card {
   padding: .75em;
   border-radius: .2em;
   background-color: #fff;
-  box-shadow: 0 0.1em 0.2rem rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0.2em 0.5rem rgba(0, 0, 0, 0.1); }
+
+.item-guestone-card {
+  padding: 0;
+  overflow: hidden; }
 
 .item-menu-card .thumbnail {
   overflow: hidden;
@@ -10025,11 +10053,29 @@ a.button {
 .item-menu-card .thumbnail img {
   max-width: 70%; }
 
-.item-menu-card a {
+.item-menu-card a,
+.item-guestone-card a {
   font-size: 1em;
   font-weight: 300;
   margin-top: .5em;
   text-decoration: none; }
+
+.item-guestone-card .thumbnail img {
+  width: 100%; }
+
+.item-guestone-card span {
+  margin: .5em auto 1em;
+  font-weight: 400;
+  display: block; }
+
+.ico-check {
+  width: 38px;
+  height: 32px;
+  position: fixed;
+  background: url(../img/ico-check.png) 5px center no-repeat; }
+
+.ico-none {
+  background-image: none; }
 
 .wrapper-room {
   border: 5px solid red; }

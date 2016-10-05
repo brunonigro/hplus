@@ -8,61 +8,73 @@
 		</ion-nav-buttons>
     </ion-nav-bar>
 
-	<ion-content scroll="true">
-		<section class="wrapper wrapper-menu">
-			
-			<header class="header-inicio">
-				<h1 class="titulo">Escolha o Departamento</h1>
-				<p class="weather">Isso nos ajuda a tornar sua estadia ainda melhor!</p>
-			</header>		
-			
-			<section class="menu-cards">
+	<ion-content overflow-scroll="true">
+		<section class="guestone-container">
+			<header class="row header-guestone">
+				<div class="col text-center">
+					<h1 class="titulo">Escolha o Departamento</h1>
+					<p>Isso nos ajuda a tornar sua estadia ainda melhor!</p>
+				</div>
+			</header>
+
+			<div class="row icon-guestone-row">
 				
-				<article class="card item-menu-card">
-					<a href="#/app/room-service">
-						<figure class="thumbnail">
-							<img src="img/">
-						</figure>
-						<div class="card-title">
-							<h2>Restaurante</h2>
-						</div>
-					</a>
-				</article>
+				<div class="col col-50 text-center">
+					<div class="item-guestone-card">
+						<span class="ico-check"></span>
+						<a href="#/app/">
+							<figure class="thumbnail">
+								<img src="img/img-restaurante.jpg">
+							</figure>
+							
+							<span>Restaurante</span>
+						</a>
+					</div>
+				</div>
+				
+				<div class="col col-50 text-center">
+					<div class="item-guestone-card">
+						<span class="ico-check ico-none"></span>
+						<a href="#/app/">
+							<figure class="thumbnail">
+								<img src="img/img-clube.jpg">
+							</figure>
+							
+							<span>Clube da Piscina</span>
+						</a>
+					</div>
+				</div>
+			</div>
 
-				<article class="card item-menu-card">
-					<a href="#/app/atracoes-eventos">
-						<figure class="thumbnail">
-							<img src="img/">
-						</figure>
-						<div class="card-title">
-							<h2>Clube da Piscina</h2>
-						</div>
-					</a>
-				</article>
-
-				<article class="card item-menu-card">
-					<a href="#/app/extrato-conta">
-						<figure class="thumbnail">
-							<img src="img/">
-						</figure>
-						<div class="card-title">
-							<h2>Serviço de Quarto</h2>
-						</div>
-					</a>
-				</article>
-
-				<article class="card item-menu-card">
-					<a href="#/app/lista-ramais">
-						<figure class="thumbnail">
-							<img src="img/">
-						</figure>
-						<div class="card-title">
-							<h2>Higienização</h2>
-						</div>
-					</a>
-				</article>
-
-			</section>
+			<div class="row icon-guestone-row">
+				
+				<div class="col col-50 text-center">
+					<div class="item-guestone-card">
+						<span class="ico-check ico-none"></span>
+						<a href="#/app/">
+							<figure class="thumbnail">
+								<img src="img/img-higienizacao.jpg">
+							</figure>
+							
+							<span>Higienização</span>
+						</a>
+					</div>
+				</div>
+				
+				<div class="col col-50 text-center">
+					<div class="item-guestone-card">
+						<span class="ico-check"></span>
+						<a href="#/app/">
+							<figure class="thumbnail">
+								<img src="img/img-servico.jpg">
+							</figure>
+							
+							<span>Serviço de Quarto</span>
+						</a>
+					</div>
+				</div>
+			</div>
 		</section>
+
 	</ion-content>
 </ion-view>
