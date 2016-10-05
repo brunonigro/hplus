@@ -9990,7 +9990,8 @@ a.button {
   flex: 1; }
 
 .header-inicio,
-.header-guestone {
+.header-guestone,
+.header-guestone-pool {
   color: #fff;
   margin-bottom: .75em;
   flex: .6 1 !important;
@@ -9998,19 +9999,25 @@ a.button {
   background: #3d72ab url(../img/background-header.jpg) center center no-repeat;
   background-size: cover; }
 
-.header-guestone {
+.header-guestone,
+.header-guestone-pool {
   color: #09213b;
   flex: .5 1 !important;
   background: #fff none; }
 
+.header-guestone-pool {
+  flex: .85 1 !important; }
+
 .header-inicio .titulo,
-.header-guestone .titulo {
+.header-guestone .titulo,
+.header-guestone-pool .titulo {
   color: #fff;
   font-size: 2.5em;
   font-weight: 300;
   margin-bottom: 0; }
 
-.header-guestone .titulo {
+.header-guestone .titulo,
+.header-guestone-pool .titulo {
   margin: .75em auto 0;
   color: #09213b;
   font-size: 2em; }
@@ -10020,7 +10027,8 @@ a.button {
   color: rgba(255, 255, 255, 0.5); }
 
 .icon-row,
-.icon-guestone-row {
+.icon-guestone-row,
+.icon-guestone-pool-row {
   margin: auto;
   padding: .25em;
   display: flex;
@@ -10030,13 +10038,22 @@ a.button {
 .icon-guestone-row {
   align-items: flex-start; }
 
+.icon-guestone-pool-row {
+  padding: 2em; }
+
 .icon-row > .col,
-.icon-guestone-row > .col {
-  padding: .5em;
-  cursor: pointer; }
+.icon-guestone-row > .col,
+.icon-guestone-pool-row > .col {
+  cursor: pointer;
+  padding: .5em; }
+
+.icon-guestone-pool-row > .col {
+  border: 5px dashed transparent;
+  padding: .4em; }
 
 .item-menu-card,
-.item-guestone-card {
+.item-guestone-card,
+.item-guestone-icon {
   padding: .75em;
   border-radius: .2em;
   background-color: #fff;
@@ -10046,6 +10063,11 @@ a.button {
   padding: 0;
   overflow: hidden; }
 
+.item-guestone-icon {
+  padding: .25em;
+  display: flex;
+  box-shadow: none; }
+
 .item-menu-card .thumbnail {
   overflow: hidden;
   justify-content: center; }
@@ -10054,13 +10076,20 @@ a.button {
   max-width: 70%; }
 
 .item-menu-card a,
-.item-guestone-card a {
+.item-guestone-card a,
+.item-guestone-icon a {
   font-size: 1em;
   font-weight: 300;
   margin-top: .5em;
   text-decoration: none; }
 
+.item-guestone-icon a {
+  margin: 0; }
+
 .item-guestone-card .thumbnail img {
+  width: 100%; }
+
+.item-guestone-icon .thumbnail img {
   width: 100%; }
 
 .item-guestone-card span {

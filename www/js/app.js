@@ -113,6 +113,24 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+  .state('app.guestone-pool', {
+    url: '/guestone-pool',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/guestone-pool.html'
+      }
+    }
+  })
+
+  .state('app.guestone-obrigado', {
+    url: '/guestone-obrigado',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/guestone-obrigado.html'
+      }
+    }
+  })
+
   .state('app.guest-service', {
     url: '/guest-service',
     views: {
@@ -133,5 +151,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
   
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/inicio');
+  $urlRouterProvider.otherwise('/app/guestone');
 });

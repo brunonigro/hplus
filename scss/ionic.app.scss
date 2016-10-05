@@ -209,7 +209,8 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	flex: 1;
 }
 .header-inicio,
-.header-guestone {
+.header-guestone,
+.header-guestone-pool {
 	color: $light;
 	margin-bottom: .75em;
 	flex: .6 1 !important;
@@ -217,19 +218,25 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	background: $calm url(../img/background-header.jpg) center center no-repeat;
 	background-size: cover;
 }
-.header-guestone {
+.header-guestone,
+.header-guestone-pool {
 	color: $positive;
 	flex: .5 1 !important;
 	background: $light none;
 }
+.header-guestone-pool {
+	flex: .85 1 !important;
+}
 .header-inicio .titulo,
-.header-guestone .titulo {
+.header-guestone .titulo,
+.header-guestone-pool .titulo {
 	color: $light;
 	font-size: 2.5em;
 	font-weight: 300;
 	margin-bottom: 0;
 }
-.header-guestone .titulo {
+.header-guestone .titulo,
+.header-guestone-pool .titulo {
 	margin: .75em auto 0;
 	color: $positive;
 	font-size: 2em;
@@ -239,7 +246,8 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	color: rgba(255,255,255,.5);
 }
 .icon-row,
-.icon-guestone-row {
+.icon-guestone-row,
+.icon-guestone-pool-row {
 	margin: auto;
 	padding: .25em;
 	display: flex;
@@ -249,14 +257,23 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .icon-guestone-row {
 	align-items: flex-start;
 }
+.icon-guestone-pool-row {
+	padding: 2em;
+}
 .icon-row > .col,
-.icon-guestone-row > .col {
-	padding: .5em;
+.icon-guestone-row > .col,
+.icon-guestone-pool-row > .col {
 	cursor: pointer;
+	padding: .5em;
+}
+.icon-guestone-pool-row > .col {
+	border: 5px dashed transparent;
+	padding: .4em;
 }
 
 .item-menu-card,
-.item-guestone-card {
+.item-guestone-card,
+.item-guestone-icon {
 	padding: .75em;
 	border-radius: .2em;
 	background-color: #fff;
@@ -266,6 +283,11 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	padding: 0;
 	overflow: hidden;
 }
+.item-guestone-icon {
+	padding: .25em;
+	display: flex;
+	box-shadow: none;
+}
 .item-menu-card .thumbnail {
 	overflow: hidden;
 	justify-content: center;
@@ -274,15 +296,19 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	max-width: 70%;
 }
 .item-menu-card a,
-.item-guestone-card a {
+.item-guestone-card a,
+.item-guestone-icon a {
 	font-size: 1em;
 	font-weight: 300;
 	margin-top: .5em;
 	text-decoration: none;
 }
-.item-guestone-card .thumbnail img {
-	width: 100%;
+.item-guestone-icon a {
+	margin: 0;
 }
+.item-guestone-card .thumbnail img { width: 100%; }
+.item-guestone-icon .thumbnail img { width: 100%; }
+
 .item-guestone-card span {
 	margin: .5em auto 1em;
 	font-weight: 400;
