@@ -51,7 +51,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .user-info,
 .menu-principal,
 .menu-secundario {
-	padding: 3em 2em;
+	padding: 2em 2em;
 }
 .user-info > .title {
 	margin: 0;
@@ -195,53 +195,70 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 
 // Início
+.inicio-container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: $stable;
+}
+.inicio-container > .row {
+	flex: 1;
+}
 .header-inicio {
-	width: 100%;
 	color: $light;
-	padding: 1.5em;
-	text-align: center;
-	background-color: #32629e;
+	margin-bottom: .75em;
+	flex: .7 1 !important;
+	align-items: center;
+	background: $calm url(../img/background-header.jpg) center center no-repeat;
 }
 .header-inicio .titulo {
 	color: $light;
-	font-size: 2.5rem;
 	font-weight: 300;
-	letter-spacing: -1px;
+	margin-bottom: 0;
+	font-size: 2.75em;
 }
 .header-inicio .titulo span {
+	font-size: inherit;
 	color: rgba(255,255,255,.5);
 }
-
-.menu-cards {
+.icon-row {
+	margin: auto;
+	padding: .25em;
 	display: flex;
-	flex-wrap: wrap;
-	margin-top: 20px;
-	background-color: $stable;
-	justify-content: space-between;
-}
-
-.item-menu-card {
-	width: 44.5%;
-	height: 180px;
-	display: flex;
-	margin-top: -10px;
-	text-align: center;
+	
+	overflow: hidden;
 	align-items: center;
+}
+.icon-row > .col {
+	padding: .5em;
+	cursor: pointer;
+}
+.item-menu-card {
+	padding: .75em;
+	border-radius: .2em;
+	background-color: #fff;
+	box-shadow: 0 .1em .2rem rgba(0,0,0,.1);
+}
+.item-menu-card .thumbnail {
+	overflow: hidden;
 	justify-content: center;
 }
 .item-menu-card .thumbnail img {
-	width: 60%;
-	height: auto;
+	max-width: 70%;
 }
 .item-menu-card a {
-	border: 0;
-	text-decoration: none !important;
+	font-size: 1em;
+	font-weight: 300;
+	margin-top: .5em;
+	text-decoration: none;
 }
-.item-menu-card a .card-title h2 {
-	font-weight: 200;
-	margin-top: .5rem;
-	font-size: 1.15em !important;
+
+
+// Room Service
+.wrapper-room {
+	border: 5px solid red;
 }
+
 
 // Lista de Ramais
 .box-busca {
@@ -274,6 +291,9 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .input-outline::-moz-placeholder          { color: $light; font-weight: 300; text-transform: lowercase; }
 .input-outline:-ms-input-placeholder      { color: $light; font-weight: 300; text-transform: lowercase; }
 .input-outline:-moz-placeholder           { color: $light; font-weight: 300; text-transform: lowercase; }
+
+
+
 
 
 
