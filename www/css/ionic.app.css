@@ -9975,6 +9975,51 @@ a.button {
   line-height: 1.5;
   padding: 0 15%; }
 
+.header-inicio {
+  width: 100%;
+  color: #fff;
+  padding: 1.5em;
+  text-align: center;
+  background-color: #32629e; }
+
+.header-inicio .titulo {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: -1px; }
+
+.header-inicio .titulo span {
+  color: rgba(255, 255, 255, 0.5); }
+
+.menu-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  background-color: #f8f8f8;
+  justify-content: space-between; }
+
+.item-menu-card {
+  width: 44.5%;
+  height: 180px;
+  display: flex;
+  margin-top: -10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+
+.item-menu-card .thumbnail img {
+  width: 60%;
+  height: auto; }
+
+.item-menu-card a {
+  border: 0;
+  text-decoration: none !important; }
+
+.item-menu-card a .card-title h2 {
+  font-weight: 200;
+  margin-top: .5rem;
+  font-size: 1.15em !important; }
+
 .box-busca {
   background-color: #3d72ab; }
 
