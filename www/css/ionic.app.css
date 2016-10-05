@@ -10043,6 +10043,9 @@ a.button {
   font-weight: 600;
   color: #fff !important; }
 
+.box-busca .item-outline .input-outline {
+  padding: 1em; }
+
 .input-outline::-webkit-input-placeholder {
   color: #fff;
   font-weight: 300;

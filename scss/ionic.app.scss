@@ -267,6 +267,9 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	font-weight: 600;
 	color: $light !important;
 }
+.box-busca .item-outline .input-outline {
+	padding: 1em;
+}
 .input-outline::-webkit-input-placeholder { color: $light; font-weight: 300; text-transform: lowercase; }
 .input-outline::-moz-placeholder          { color: $light; font-weight: 300; text-transform: lowercase; }
 .input-outline:-ms-input-placeholder      { color: $light; font-weight: 300; text-transform: lowercase; }
