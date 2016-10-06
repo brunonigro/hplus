@@ -85,7 +85,8 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Login + Cadastro
 .logo,
-.welcome {
+.welcome,
+.obrigado {
 	display: flex;	
 	justify-content: center;
 	padding: 25% 0;
@@ -168,28 +169,42 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .item-custom .input-custom:-moz-placeholder           { font-size: .75em; color: #ccc; }
 
 
-// Welcome
-.welcome {
+// Welcome + Obrigado
+.welcome,
+.obrigado {
 	color: #fff;
 	flex: 1 auto;
 	padding: 20% 0;
+	margin-top: -20px;
 	align-items: center;
 	flex-direction: column;
 }
-.welcome img {
+.welcome img,
+.obrigado img {
 	width: 30%;
 	height: 100%;
 	margin: 25% auto;	
 }
-.welcome h1 {
+.obrigado img {
+	width: 50%;
+	height: 100%;
+	margin: 15% auto;
+}
+.welcome h1,
+.obrigado h1 {
 	color: #fff;
 	font-weight: 300;
 }
-.welcome p {
+.welcome p,
+.obrigado p {
 	text-align: center;
 	font-size: .9rem;
 	line-height: 1.5;
-	padding: 0 15%;
+	padding: 0 7.5%;
+}
+.obrigado p,
+.obrigado h1 {
+	color: $positive;
 }
 
 
