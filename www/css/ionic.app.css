@@ -9986,6 +9986,9 @@ a.button {
   line-height: 1.5;
   padding: 0 7.5%; }
 
+.obrigado a {
+  text-align: center; }
+
 .obrigado p,
 .obrigado h1 {
   color: #09213b; }
@@ -10001,6 +10004,7 @@ a.button {
   background-color: #fff; }
 
 .menu-container > .row,
+.room-container > .row,
 .guestone-container > .row {
   flex: 1; }
 
@@ -10121,8 +10125,10 @@ a.button {
 .ico-none {
   background-image: none; }
 
-.wrapper-room {
-  border: 5px solid red; }
+.roomserv-wrapper {
+  background: #fff url(../img/img-roomservice.jpg) 0 0 no-repeat;
+  background-size: 100%;
+  padding-top: 160px; }
 
 .box-busca {
   background-color: #3d72ab; }

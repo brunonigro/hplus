@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
-
     <link rel="manifest" href="manifest.json">
 
     <!-- un-comment this code to enable service worker
@@ -15,7 +14,6 @@
           .catch(err => console.log('Error', err));
       }
     </script>-->
-
 
     <!-- compiled css output -->
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -31,7 +29,7 @@
     <script src="js/controllers.js"></script>
   </head>
 
-  <body ng-app="starter">
+  <body ng-app="starter" ng-controller="MyCtrl">
     <ion-nav-view></ion-nav-view>
   </body>
 </html>

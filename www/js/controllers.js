@@ -41,16 +41,61 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
-})
-
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('MyCtrl', function($scope) {
 });
+
+// ACCORDION #2
+// .controller('MyCtrl', function($scope) {
+//   $scope.groups = [];
+//   for (var i=0; i<10; i++) {
+//     $scope.groups[i] = {
+//       name: i,
+//       items: []
+//     };
+//     for (var j=0; j<5; j++) {
+//       $scope.groups[i].items.push(i + '-' + j);
+//     }
+//   }
+
+//   $scope.toggleGroup = function(group) {
+//     if ($scope.isGroupShown(group)) {
+//       $scope.shownGroup = null;
+//     } else {
+//       $scope.shownGroup = group;
+//     }
+//   };
+//   $scope.isGroupShown = function(group) {
+//     return $scope.shownGroup === group;
+//   };
+
+// });
+
+// ACCORDION #1
+// .controller('MyCtrl', function($scope) {
+//   $scope.items = [{
+//       title: 'Saladas',
+//       text: '...'
+//     },{
+//       title: 'Aves & Carnes',
+//       text: '...'
+//     },{
+//       title: 'Pratos Quentes',
+//       text: '...'
+//     },{
+//       title: 'Sanduiches',
+//       text: '...'
+//   }];
+
+//   $scope.toggleItem = function(item) {
+//     if ($scope.isItemShown(item)) {
+//       $scope.shownItem = null;
+//     } else {
+//       $scope.shownItem = item;
+//     }
+//   };
+
+//   $scope.isItemShown = function(item) {
+//     return $scope.shownItem === item;
+//   };
+// });
+

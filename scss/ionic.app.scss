@@ -202,6 +202,9 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	line-height: 1.5;
 	padding: 0 7.5%;
 }
+.obrigado a {
+	text-align: center;
+}
 .obrigado p,
 .obrigado h1 {
 	color: $positive;
@@ -220,6 +223,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	background-color: $light;
 }
 .menu-container > .row,
+.room-container > .row,
 .guestone-container > .row {
 	flex: 1;
 }
@@ -342,9 +346,42 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 
 // Room Service
-.wrapper-room {
-	border: 5px solid red;
+.roomserv-wrapper {
+	background: $light url(../img/img-roomservice.jpg) 0 0 no-repeat;
+	background-size: 100%;
+	padding-top: 160px;
 }
+
+
+// ACCORDION #1
+// .item-expand {
+// 	position: relative;
+// 	width: 100%;
+// 	max-height: 20px;
+// 	transition: max-height 0.1s ease-out;
+// 	overflow: hidden;
+// }
+// .item-expand.inactive:after {
+// 	content: "";
+// 	position: absolute;
+// 	bottom: 0px;
+// 	left: 0;
+// 	height: 15px;
+// 	width: 100%;
+// 	display: block;
+// }
+// .item-expand.active {
+// 	max-height: 200px;
+// 	transition: max-height 0.3s ease-out;
+// }
+// .item-expand-footer {
+// 	color: red;
+// 	margin-top: 10px;
+// }
+// .item-expand-footer i {
+// 	margin-right: 10px;
+// }
+
 
 
 // Lista de Ramais
