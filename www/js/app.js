@@ -77,6 +77,24 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+  .state('app.room-service-incluir', {
+    url: '/room-service-incluir',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/room-service-incluir.html'
+      }
+    }
+  })
+
+  .state('app.room-obrigado', {
+    url: '/room-obrigado',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/room-obrigado.html'
+      }
+    }
+  })
+
   .state('app.atracoes-eventos', {
     url: '/atracoes-eventos',
     views: {

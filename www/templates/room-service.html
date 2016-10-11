@@ -10,41 +10,23 @@
 
 	<ion-content>
 		<section class="roomserv-wrapper">
+			
 			<ion-list>
-				<ion-item>
-					<div>
-						<h2>Titulo</h2>
-						<p>Lorem ipsum dolor sit amet.</p>
-					</div>
-				</ion-item>
-				<ion-item>
-					<div>
-						<h2>Titulo</h2>
-						<p>Lorem ipsum dolor sit amet.</p>
-					</div>
-				</ion-item>
-			</ion-list>
-			<!-- accordion #2 -->
-			<!-- <ion-list>
 				<div ng-repeat="group in groups">
-					<ion-item class="item-light" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
-						<i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus' "></i>&nbsp;Group {{group.name}}
+					<ion-item class="item-icon-right item-pai" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
+						<div class="item-text-center item-text-wrap">{{group.name}}</div>
+						<i class="icon positive" ng-class="isGroupShown(group) ? 'ion-ios-arrow-up' : 'ion-ios-arrow-down'"></i>
 					</ion-item>
-					<ion-item class="item-accordion" ng-repeat="item in group.items" ng-show="isGroupShown(group)">
-						{{item}}
+
+					<ion-item class="item-accordion" ng-repeat="item in group.childItems" ng-show="isGroupShown(group)">
+						<div class="item-text-center item-text-wrap item-flex">
+							<a href="#/app/room-service-incluir">{{item.childName}}</a>
+							<p class="item-preco">R$ {{item.childPrice}}</p>
+						</div>
 					</ion-item>
 				</div>
-			</ion-list> -->
+			</ion-list>
 
-			<!-- accordion #1 -->
-			<!-- <ion-list>
-				<ion-item ng-repeat="item in items" ng-click="toggleItem(item)" class="item item-text-wrap">
-					<div class="item-custom-room" ng-class="isItemShown(item) ? 'item-expand active' : 'item-expand inactive'">
-						<h2>{{ item.title }}</h2>
-						<p>{{ item.text }}</p>
-					</div>
-				</ion-item>
-			</ion-list> -->
 		</section>
 	</ion-content>
 </ion-view>

@@ -13,7 +13,7 @@ angular.module('starter.controllers', [])
   $scope.loginData = {};
 
   // Create the login modal that we will use later
-  $ionicModal.fromTemplateUrl('templates/login.html', {
+  $ionicModal.fromTemplateUrl('templates/modal-creditos.html', {
     scope: $scope
   }).then(function(modal) {
     $scope.modal = modal;
@@ -42,60 +42,167 @@ angular.module('starter.controllers', [])
 })
 
 .controller('MyCtrl', function($scope) {
+  $scope.groups = [
+    {
+      "id": 1,
+      "name": "Saladas",
+      "childItems": [
+        {
+          "childName": "Salada Simples",
+          "childPrice": 12
+        },
+        {
+          "childName": "Tabule Tropical",
+          "childPrice": 18
+        },
+        {
+          "childName": "Salada de Grão de Bico",
+          "childPrice": 20
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Aves",
+      "childItems": [
+        {
+          "childName": "Frango à Passarinho Assado",
+          "childPrice": 14
+        },
+        {
+          "childName": "Frango Assado com Batatas",
+          "childPrice": 21
+        },
+        {
+          "childName": "Bife à Rolê",
+          "childPrice": 30
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Pratos Quentes",
+      "childItems": [
+        {
+          "childName": "Costelinha de Porco Recheada",
+          "childPrice": 52
+        },
+        {
+          "childName": "Lagarto Recheado",
+          "childPrice": 45
+        },
+        {
+          "childName": "Carne Assada na Panela de Pressão",
+          "childPrice": 38
+        },
+        {
+          "childName": "Almôndegas de Carne Moída",
+          "childPrice": 26
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Sanduiches",
+      "childItems": [
+        {
+          "childName": "Sanduíche Natural de Atum",
+          "childPrice": 16
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Sobremesas",
+      "childItems": [
+        {
+          "childName": "Torta Gelada de Morango",
+          "childPrice": 28
+        },
+        {
+          "childName": "Trufa de Chocolate",
+          "childPrice": 5
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Drinks",
+      "childItems": [
+        {
+          "childName": "Vanilla Cuba Libre",
+          "childPrice": 13
+        },
+        {
+          "childName": "Caju Cremoso",
+          "childPrice": 8
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Aperitivos",
+      "childItems": [
+        {
+          "childName": "Bolinha de Queijo (6 unidades)",
+          "childPrice": 12
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Carnes",
+      "childItems": [
+        {
+          "childName": "Bolinha de Queijo (6 unidades)",
+          "childPrice": 20
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Destilados",
+      "childItems": [
+        {
+          "childName": "Johnnie Walker Black Label",
+          "childPrice": 110
+        },
+        {
+          "childName": "Glenfiddich 12yo",
+          "childPrice": 150
+        }
+      ]
+    }
+  ];
+  
+  $scope.toggleGroup = function(group) {
+    if ($scope.isGroupShown(group)) {
+      $scope.shownGroup = null;
+    } else {
+      $scope.shownGroup = group;
+    }
+    $ionicScrollDelegate.resize();
+  }
+
+  $scope.toggleSubGroup = function(item) {
+    if ($scope.isSubGroupShown(item)) {
+      $scope.shownChild = null;
+    } else {
+      $scope.shownChild = item;
+    }
+    // $ionicScrollDelegate.resize();
+  }
+
+  $scope.isGroupShown = function(group) {
+    return $scope.shownGroup === group;
+  }
+
+  $scope.isSubGroupShown = function(item) {
+    return $scope.shownChild === item;
+  }
+
+  $scope.openLink = function(item) {
+    $window.open('https://www.google.com', '_blank');
+  }
+
 });
-
-// ACCORDION #2
-// .controller('MyCtrl', function($scope) {
-//   $scope.groups = [];
-//   for (var i=0; i<10; i++) {
-//     $scope.groups[i] = {
-//       name: i,
-//       items: []
-//     };
-//     for (var j=0; j<5; j++) {
-//       $scope.groups[i].items.push(i + '-' + j);
-//     }
-//   }
-
-//   $scope.toggleGroup = function(group) {
-//     if ($scope.isGroupShown(group)) {
-//       $scope.shownGroup = null;
-//     } else {
-//       $scope.shownGroup = group;
-//     }
-//   };
-//   $scope.isGroupShown = function(group) {
-//     return $scope.shownGroup === group;
-//   };
-
-// });
-
-// ACCORDION #1
-// .controller('MyCtrl', function($scope) {
-//   $scope.items = [{
-//       title: 'Saladas',
-//       text: '...'
-//     },{
-//       title: 'Aves & Carnes',
-//       text: '...'
-//     },{
-//       title: 'Pratos Quentes',
-//       text: '...'
-//     },{
-//       title: 'Sanduiches',
-//       text: '...'
-//   }];
-
-//   $scope.toggleItem = function(item) {
-//     if ($scope.isItemShown(item)) {
-//       $scope.shownItem = null;
-//     } else {
-//       $scope.shownItem = item;
-//     }
-//   };
-
-//   $scope.isItemShown = function(item) {
-//     return $scope.shownItem === item;
-//   };
-// });
-

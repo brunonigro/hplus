@@ -9865,7 +9865,7 @@ a.button {
 .obrigado {
   display: flex;
   justify-content: center;
-  padding: 25% 0; }
+  padding: 35% 0; }
 
 .logo img,
 .btn-add-image a img {
@@ -10129,6 +10129,46 @@ a.button {
   background: #fff url(../img/img-roomservice.jpg) 0 0 no-repeat;
   background-size: 100%;
   padding-top: 160px; }
+
+.roomserv-wrapper .list .item {
+  border: 1px solid rgba(0, 0, 0, 0.05); }
+
+.roomserv-wrapper .list .item.item-pai.active {
+  font-size: 1.25em;
+  font-weight: 500; }
+
+.roomserv-wrapper .list .item.active {
+  color: #09213b;
+  background-color: #fff; }
+
+.roomserv-wrapper .list .item.item-accordion {
+  font-size: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 50px;
+  transition: 0.09s all linear; }
+
+.roomserv-wrapper .list .item.item-accordion a {
+  text-decoration: none;
+  flex: 1 1 auto;
+  color: #333; }
+
+.roomserv-wrapper .list .item.item-accordion.ng-hide {
+  line-height: 0px; }
+
+.roomserv-wrapper .list .item.item-accordion.ng-hide-add,
+.roomserv-wrapper .list .item.item-accordion.ng-hide-remove {
+  display: block !important; }
+
+.roomserv-wrapper .list .item .item-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.roomserv-wrapper .list .item .item-flex .item-preco {
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #3d72ab; }
 
 .box-busca {
   background-color: #3d72ab; }

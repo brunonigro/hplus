@@ -89,7 +89,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .obrigado {
 	display: flex;	
 	justify-content: center;
-	padding: 25% 0;
+	padding: 35% 0;
 }
 .logo img,
 .btn-add-image a img {
@@ -351,37 +351,46 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	background-size: 100%;
 	padding-top: 160px;
 }
-
-
-// ACCORDION #1
-// .item-expand {
-// 	position: relative;
-// 	width: 100%;
-// 	max-height: 20px;
-// 	transition: max-height 0.1s ease-out;
-// 	overflow: hidden;
-// }
-// .item-expand.inactive:after {
-// 	content: "";
-// 	position: absolute;
-// 	bottom: 0px;
-// 	left: 0;
-// 	height: 15px;
-// 	width: 100%;
-// 	display: block;
-// }
-// .item-expand.active {
-// 	max-height: 200px;
-// 	transition: max-height 0.3s ease-out;
-// }
-// .item-expand-footer {
-// 	color: red;
-// 	margin-top: 10px;
-// }
-// .item-expand-footer i {
-// 	margin-right: 10px;
-// }
-
+.roomserv-wrapper .list .item {
+	border: 1px solid rgba(0,0,0,.05);
+}
+.roomserv-wrapper .list .item.item-pai.active {
+	font-size: 1.25em;
+	font-weight: 500;
+}
+.roomserv-wrapper .list .item.active {
+	color: $positive;
+	background-color: $light;
+}
+.roomserv-wrapper .list .item.item-accordion {
+	font-size: 1em;	
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 50px;
+	transition: 0.09s all linear;
+}
+.roomserv-wrapper .list .item.item-accordion a {
+	text-decoration: none;
+	flex: 1 1 auto;
+	color: #333;
+}
+.roomserv-wrapper .list .item.item-accordion.ng-hide {
+	line-height: 0px;
+}
+.roomserv-wrapper .list .item.item-accordion.ng-hide-add,
+.roomserv-wrapper .list .item.item-accordion.ng-hide-remove {
+	display: block !important;
+}
+.roomserv-wrapper .list .item .item-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.roomserv-wrapper .list .item .item-flex .item-preco {
+	font-weight: 600;
+	font-size: 1.2em;
+	color: $calm;
+}
 
 
 // Lista de Ramais
