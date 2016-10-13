@@ -9864,8 +9864,8 @@ a.button {
 .welcome,
 .obrigado {
   display: flex;
-  justify-content: center;
-  padding: 35% 0; }
+  padding: 23% 0;
+  justify-content: center; }
 
 .logo img,
 .btn-add-image a img {
@@ -10000,6 +10000,7 @@ a.button {
   flex-direction: column;
   background-color: #f8f8f8; }
 
+.extrato-container,
 .guestone-container {
   background-color: #fff; }
 
@@ -10185,14 +10186,16 @@ a.button {
   padding: 15px !important;
   font-size: 14px !important; }
 
-.roomserv-wrapper .valor-total {
+.roomserv-wrapper .valor-total,
+.extrato-container .valor-total {
   display: flex;
   font-size: 2em;
   font-weight: 500;
-  margin-top: 1.25em;
+  margin: .75em auto .5em;
   justify-content: space-between; }
 
-.roomserv-wrapper .valor-total p span {
+.roomserv-wrapper .valor-total p span,
+.extrato-container .valor-total p span {
   font-size: .5em; }
 
 .roomserv-wrapper .row-obrigado {
@@ -10208,6 +10211,43 @@ a.button {
 .roomserv-wrapper .row-obrigado .col-message img {
   margin: 7.5% 0;
   width: 40%; }
+
+.titulo-extrato {
+  font-size: 2.5em;
+  font-weight: 300;
+  color: #09213b;
+  padding: .75em 0 .25em; }
+
+.extrato-container .titulo-section {
+  color: #09213b;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 1.25em .5em .75em;
+  text-transform: uppercase; }
+
+.extrato-container .col-legenda span {
+  color: #666;
+  font-size: .7em;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.extrato-container .col-legenda p {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: .2em;
+  color: #333; }
+
+.extrato-container .itens-consumo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.extrato-container .itens-consumo p {
+  font-size: 1em; }
+
+.extrato-container .itens-consumo p:nth-child(2) {
+  padding-left: 1em;
+  flex: 1 1 auto; }
 
 .box-busca {
   background-color: #3d72ab; }

@@ -35,7 +35,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Ionic
 .wrapper {
 	display: flex;
-	height: 100%; 
+	height: 100%;
 	min-height: 100vh;
 	flex-direction: column;
 	font-family: 'Roboto', sans-serif;	
@@ -88,8 +88,8 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .welcome,
 .obrigado {
 	display: flex;	
+	padding: 23% 0;
 	justify-content: center;
-	padding: 35% 0;
 }
 .logo img,
 .btn-add-image a img {
@@ -219,6 +219,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	flex-direction: column;
 	background-color: $stable;
 }
+.extrato-container,
 .guestone-container {
 	background-color: $light;
 }
@@ -289,7 +290,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	border: 5px dashed transparent;
 	padding: .4em;
 }
-
 .item-menu-card,
 .item-guestone-card,
 .item-guestone-icon {
@@ -406,14 +406,16 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	padding: 15px !important;
     font-size: 14px !important;
 }
-.roomserv-wrapper .valor-total {
+.roomserv-wrapper .valor-total,
+.extrato-container .valor-total {
 	display: flex;
 	font-size: 2em;
 	font-weight: 500;
-	margin-top: 1.25em;
+	margin: .75em auto .5em;
 	justify-content: space-between;
 }
-.roomserv-wrapper .valor-total p span {
+.roomserv-wrapper .valor-total p span,
+.extrato-container .valor-total p span {
 	font-size: .5em;
 }
 .roomserv-wrapper .row-obrigado {
@@ -431,6 +433,45 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	width: 40%;
 }
 
+
+// Extrato da Conta
+.titulo-extrato {
+	font-size: 2.5em;
+	font-weight: 300;
+	color: $positive;
+	padding: .75em 0 .25em;
+}
+.extrato-container .titulo-section {
+	color: $positive;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 1.25em .5em .75em;
+	text-transform: uppercase;
+}
+.extrato-container .col-legenda span {
+	color: #666;
+	font-size: .7em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.extrato-container .col-legenda p {
+	font-size: 1.5em;
+	font-weight: 300;
+	margin-top: .2em;
+	color: #333;
+}
+.extrato-container .itens-consumo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.extrato-container .itens-consumo p {
+	font-size: 1em;
+}
+.extrato-container .itens-consumo p:nth-child(2) {
+	padding-left: 1em;
+	flex: 1 1 auto;
+}
 
 
 // Lista de Ramais
