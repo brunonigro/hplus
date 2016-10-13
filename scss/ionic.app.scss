@@ -349,7 +349,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .roomserv-wrapper {
 	background: $light url(../img/img-roomservice.jpg) 0 0 no-repeat;
 	background-size: 100%;
-	padding-top: 160px;
+	padding-top: 140px;
 }
 .roomserv-wrapper .list .item {
 	border: 1px solid rgba(0,0,0,.05);
@@ -391,6 +391,46 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	font-size: 1.2em;
 	color: $calm;
 }
+.roomserv-wrapper .itens-swiped {
+	padding-bottom: .5em;
+	padding-top: .5em;
+	font-size: 1rem;
+}
+.roomserv-wrapper .itens-swiped span {
+	margin-right: 1em;
+	font-weight: bold;
+}
+.roomserv-wrapper .button-swiped {
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 15px !important;
+    font-size: 14px !important;
+}
+.roomserv-wrapper .valor-total {
+	display: flex;
+	font-size: 2em;
+	font-weight: 500;
+	margin-top: 1.25em;
+	justify-content: space-between;
+}
+.roomserv-wrapper .valor-total p span {
+	font-size: .5em;
+}
+.roomserv-wrapper .row-obrigado {
+	flex-direction: column;
+}
+.roomserv-wrapper .row-obrigado .col-message {
+	color: $positive;
+	text-align: center;
+}
+.roomserv-wrapper .row-obrigado .col-message h1 {
+	font-weight: 400;
+}
+.roomserv-wrapper .row-obrigado .col-message img {
+	margin: 7.5% 0;
+	width: 40%;
+}
+
 
 
 // Lista de Ramais

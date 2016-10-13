@@ -10,6 +10,13 @@
 
 	<ion-content>
 		<section class="roomserv-wrapper">
+
+			<div class="padding">
+				<label class="item item-input">
+					<input type="text" placeholder="digite para buscar no cardápio" ng-model="search.string">
+					<a ng-if="search.string != ''" on-touch="search.string=''"><i class="icon ion-ios-close placeholder-icon"></i></a>
+				</label>
+			</div>
 			
 			<ion-list>
 				<div ng-repeat="group in groups">
