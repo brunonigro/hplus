@@ -158,6 +158,34 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+  .state('app.add-solicitacao', {
+    url: '/add-solicitacao',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/add-solicitacao.html'
+      }
+    }
+  })
+
+  .state('app.guestserv-obrigado', {
+    url: '/guestserv-obrigado',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/guestserv-obrigado.html'
+      }
+    }
+  })
+
+  .state('app.guestserv-andamento', {
+    url: '/guestserv-andamento',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/guestserv-andamento.html'
+      }
+    }
+  })
+  
+
   .state('app.editar-perfil', {
     url: '/editar-perfil',
     views: {
@@ -169,5 +197,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
   
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/atracoes-eventos');
+  $urlRouterProvider.otherwise('/app/guest-service');
 });

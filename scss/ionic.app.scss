@@ -435,7 +435,8 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 
 // Extrato da Conta
-.titulo-extrato {
+.extrato-container .titulo-extrato,
+.extrato-container .titulo-solicitacoes {
 	font-size: 2.5em;
 	font-weight: 300;
 	color: $positive;
@@ -448,6 +449,11 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	margin: 1.25em .5em .75em;
 	text-transform: uppercase;
 }
+.extrato-container .titulo-solicitacoes {
+	font-size: 2em;
+	padding: 1.25em 0 .5em;
+}
+
 .extrato-container .col-legenda span {
 	color: #666;
 	font-size: .7em;
@@ -460,18 +466,31 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 	margin-top: .2em;
 	color: #333;
 }
-.extrato-container .itens-consumo {
+.extrato-container .itens-consumo,
+.extrato-container .itens-servicos {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
-.extrato-container .itens-consumo p {
-	font-size: 1em;
+.extrato-container .itens-consumo p,
+.extrato-container .itens-servicos p {
+	font-size: .9em;
 }
-.extrato-container .itens-consumo p:nth-child(2) {
+.extrato-container .itens-consumo p:nth-child(2),
+.extrato-container .itens-servicos p:nth-child(2) {
 	padding-left: 1em;
 	flex: 1 1 auto;
 }
+.extrato-container .itens-servicos p.st-finalizada,
+.extrato-container .itens-servicos p.st-aguardando,
+.extrato-container .itens-servicos p.st-andamento {
+	color: $balanced;
+	font-size: .7em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.extrato-container .itens-servicos p.st-aguardando { color: $assertive; }
+.extrato-container .itens-servicos p.st-andamento { color: $energized; }
 
 
 // Lista de Ramais

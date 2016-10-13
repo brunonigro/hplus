@@ -10212,7 +10212,8 @@ a.button {
   margin: 7.5% 0;
   width: 40%; }
 
-.titulo-extrato {
+.extrato-container .titulo-extrato,
+.extrato-container .titulo-solicitacoes {
   font-size: 2.5em;
   font-weight: 300;
   color: #09213b;
@@ -10224,6 +10225,10 @@ a.button {
   font-weight: bold;
   margin: 1.25em .5em .75em;
   text-transform: uppercase; }
+
+.extrato-container .titulo-solicitacoes {
+  font-size: 2em;
+  padding: 1.25em 0 .5em; }
 
 .extrato-container .col-legenda span {
   color: #666;
@@ -10237,17 +10242,34 @@ a.button {
   margin-top: .2em;
   color: #333; }
 
-.extrato-container .itens-consumo {
+.extrato-container .itens-consumo,
+.extrato-container .itens-servicos {
   display: flex;
   align-items: center;
   justify-content: space-between; }
 
-.extrato-container .itens-consumo p {
-  font-size: 1em; }
+.extrato-container .itens-consumo p,
+.extrato-container .itens-servicos p {
+  font-size: .9em; }
 
-.extrato-container .itens-consumo p:nth-child(2) {
+.extrato-container .itens-consumo p:nth-child(2),
+.extrato-container .itens-servicos p:nth-child(2) {
   padding-left: 1em;
   flex: 1 1 auto; }
+
+.extrato-container .itens-servicos p.st-finalizada,
+.extrato-container .itens-servicos p.st-aguardando,
+.extrato-container .itens-servicos p.st-andamento {
+  color: #a6c514;
+  font-size: .7em;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.extrato-container .itens-servicos p.st-aguardando {
+  color: #ef473a; }
+
+.extrato-container .itens-servicos p.st-andamento {
+  color: #ffc900; }
 
 .box-busca {
   background-color: #3d72ab; }
